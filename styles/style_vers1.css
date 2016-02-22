@@ -1,0 +1,109 @@
+@import "reset.css" ;
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed) ;
+
+html {
+background: #FBE0BC ;/*
+height: 100% ;*/
+width: 100% ;
+font-family: 'Roboto Condensed', sans-serif ;
+}
+
+body {
+margin: 0 auto ;
+height: 100% ;
+max-width: 1200px ;
+background-image: url(../images/poster.png) ;
+background-size: auto 100% ;
+background-repeat: no-repeat ;
+background-attachment: fixed ;
+background-position: top center ; 
+background-clip: content-box ;
+text-align: center ;
+}
+
+h1 {
+color: #fff ;
+font-size: 50pt ;
+font-style: italic ;
+font-weight: bold ;
+text-align: center ;
+background: #346D82 ;
+padding: 10pt 0 ;
+text-shadow: 0 4px 4px #F28F00 ;
+}
+
+h2 {
+color: #C2A286 ;
+font-size: 50pt ;
+font-style: italic ;
+font-weight: bold ;
+text-align: center ;
+background: #673810 ;
+padding: 10pt 0 ;
+margin: 20pt ;
+border-radius: 20pt ;
+text-shadow: 0 4px 4px #F28F00 ;
+}
+
+ul {
+text-align: left ;
+width: auto ;
+margin: 0 auto ;
+}
+
+ul > li {
+font-size: 20pt ;
+display: inline-block;
+margin: 20pt ;
+padding: 15pt ;
+width: 200pt ;
+vertical-align: middle ;
+text-align: center ;
+border-radius: 10pt ;
+border-color: black ;
+border-style: solid ;
+border-width: 5pt ;
+background: #D04E3C ;
+color: #000000 ;
+cursor: pointer ;
+text-shadow: 1px 1px 2px #FBE0BC ;
+opacity: 0.75 ;
+transition: opacity 0.4s ease 0s ;
+box-shadow: 0 0 5px #000 inset ;
+}
+
+ul > li:hover {
+opacity: 1 ;
+}
+
+ul > li > audio {
+width: 100% ;
+}
+
+:root.noscript ul > li > audio {
+display: block ;
+}
+
+:root.script ul > li > audio {
+display: none ;
+}
+
+q::before {
+content: "„" ;
+}
+
+q::after {
+content: "“" ;
+}
+
+.script section h2 {
+cursor: pointer ;
+}
+
+ul.nichtanzeigen {
+display: none ;
+}
+
+ul.anzeigen {
+display: block ;
+}

@@ -1,0 +1,218 @@
+@import "reset.css" ;
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed) ;
+
+html {
+background: #FBE0BC ;/*
+height: 100% ;
+width: 100% ;*/
+font-family: 'Roboto Condensed', sans-serif ;
+background-image: url(../images/poster.png) ;
+background-repeat: no-repeat ;
+background-attachment: fixed ;
+background-position: top center ; 
+background-clip: content-box ;
+}
+
+@media (orientation: landscape) {
+
+html {
+background-size: 100% auto ;
+}
+
+}
+
+@media (orientation: portrait) {
+	
+html {
+background-size: auto 100% ;
+}
+
+}
+
+body {
+margin: 0 auto ;
+/* height: 100% ; */
+/* max-width: 1200px ; */
+text-align: center ;
+}
+
+h1 {
+color: #fff ;
+font-size: 30pt ;
+font-weight: bold ;
+text-align: left ;
+background: #346D82 ;
+padding: 10pt 0 ;
+padding-left: 100pt ;
+text-shadow: 0 4px 4px #F28F00 ;
+}
+
+h2 {
+color: #C2A286 ;
+font-size: 20pt ;
+font-style: italic ;
+font-weight: bold ;
+text-align: center ;
+background: #673810 ;
+padding: 10pt 0 ;
+margin: 20pt ;
+border-radius: 20pt ;
+text-shadow: 0 4px 4px #F28F00 ;
+}
+
+section > ul {
+text-align: center ;
+width: auto ;
+margin: 0 auto ;
+}
+
+section > ul > li {
+font-size: 15pt ;
+display: inline-block;
+margin: 0.5em ;
+padding: 0.5em ;
+width: 200pt ;
+vertical-align: middle ;
+text-align: center ;
+border-radius: 10pt ;
+border-color: black ;
+border-style: solid ;
+border-width: 5pt ;
+background: #D04E3C ;
+color: #000000 ;
+cursor: pointer ;
+text-shadow: 1px 1px 2px #FBE0BC ;
+opacity: 0.75 ;
+transition: opacity 0.4s ease 0s ;
+box-shadow: 0 0 5px #000 inset ;
+}
+
+section > ul > li:hover {
+opacity: 1 ;
+}
+
+section > ul > li > audio {
+width: 100% ;
+}
+
+:root.noscript section > ul > li > audio {
+display: block ;
+}
+
+:root.script ul > li > audio {
+display: none ;
+}
+
+q::before {
+content: "„" ;
+}
+
+q::after {
+content: "“" ;
+}
+
+.script section h2 {
+cursor: pointer ;
+}
+
+ul.nichtanzeigen {
+display: none ;
+}
+
+ul.anzeigen {
+display: block ;
+}
+
+nav {
+display: inline-block ;
+position: absolute ;
+right: 0 ;
+top: 0 ;
+margin: 0 ;
+padding: 0 ;
+vertical-align: middle ;
+height: 50pt ;
+}
+
+nav > ul {
+display: inline-block ;
+height: 50pt ;
+}
+
+nav > ul > li {
+display: inline-block ;
+vertical-align: middle ;
+height: 50pt ;
+}
+
+nav :link {
+padding: 0 ;
+margin: 0 -3px ;
+display: inline-block ;
+padding: 10pt ;
+height: 50pt ;
+background: #D04E3C ;
+font-size: 20pt ;
+border-bottom: solid 5pt #F28F00 ;
+vertical-align: middle ;
+box-sizing: border-box ;
+color: #FBE0BC ;
+font-weight: bold ;
+text-decoration: none ;
+}
+
+nav :link:hover {
+color: #346D82 ;
+}
+
+nav li:first-child :link {
+border-bottom-left-radius: 30pt ;
+border-left: solid 5pt #F28F00 ;
+}
+
+html#pressestimmen {
+background: none ;
+text-align: left ;
+}
+
+#pressestimmen {
+text-align: left !important ;
+}
+
+#pressestimmen section {
+text-align: left !important ;
+display: block ;
+height: 5em ;
+margin: 1em ;
+}
+
+#pressestimmen section blockquote {
+text-align: left !important ;
+font-style: italic ;
+}
+
+#pressestimmen section blockquote::before {
+content: "„" ;
+}
+
+#pressestimmen section blockquote::after {
+content: "“" ;
+}
+
+#pressestimmen figure {
+display: inline-block ;
+width: 10em ;
+height: 4em ;
+float: left ;
+position: relative ;
+margin-right: 0.5em ;
+}
+
+#pressestimmen img {
+height: 4em ;
+float: right ;
+}
+
+html#f404 {
+background: url(../images/404.jpg) ;
+}
